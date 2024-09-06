@@ -48,3 +48,6 @@ Aqui no Curioso, vamos desvendar juntos o mundo mágico da programação. ‍♂
 **Independente do seu objetivo, aqui você vai encontrar o que precisa para dar seus primeiros passos na programação.**
 
 **Vamos juntos nessa jornada? **
+
+
+vercel : https://curioso-jk4h4fwtf-larysampaios-projects.vercel.app/
