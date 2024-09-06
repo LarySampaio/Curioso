@@ -50,4 +50,6 @@ Aqui no Curioso, vamos desvendar juntos o mundo mágico da programação. ‍♂
 **Vamos juntos nessa jornada? **
 
 
-vercel : https://curioso-jk4h4fwtf-larysampaios-projects.vercel.app/
+vercel :  https://vercel.com/larysampaios-projects/curioso/74AthCvjbkUEhHAG7sD2FuCGKAp6
+
+link : https://curioso-jk4h4fwtf-larysampaios-projects.vercel.app/
