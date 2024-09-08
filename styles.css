@@ -4,26 +4,47 @@ body {
 }
 /* Importa a fonte Chakra Petch do Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Estiliza o corpo da página */
+
 body {
-  font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-  background-color: rgb(252, 174, 219); /* Cor de fundo da página */
-  display: flex; /* Usa Flexbox para layout */
-  flex-direction: column; /* Alinha os itens na vertical */
-  align-items: center; /* Centraliza os itens horizontalmente */
-  justify-content: center; /* Centraliza os itens verticalmente */
-  height: 100vh; /* Preenche a altura total da viewport */
-  margin: 0; /* Remove a margem padrão */
-  padding: 0; /* Remove o padding padrão */
+  font-family: "Chakra Petch", sans-serif;
+  background: linear-gradient(
+    to bottom right,
+    #000,
+    rgb(27, 27, 67),
+    rgb(26, 26, 120),
+    #00e6ee
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-/* Estiliza os títulos h1 */
 h1 {
-  font-size: 2.5rem; /* Tamanho da fonte */
-  color: #222831; /* Cor do texto */
-  text-align: center; /* Alinha o texto ao centro */
-  letter-spacing: 0.4rem; /* Espaçamento entre letras */
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Estiliza as seções da página */
@@ -75,44 +96,49 @@ section button:hover {
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-  background: #ffffff; /* Cor de fundo dos itens */
+  background: transparent;  
   border-radius: 0.6rem; /* Borda arredondada */
   padding: 1rem; /* Espaçamento interno */
   margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  box-shadow: 0 4px 8px rgba(3, 234, 255, 0.3);
+/
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
   font-size: 1.5rem; /* Tamanho da fonte */
-  color: #222831; /* Cor do texto */
+  color: #ffffff; /* Cor do texto */
+  z-index: absolute;
 }
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
   text-decoration: none; /* Remove o sublinhado padrão dos links */
-  color: #30475e; /* Cor do texto dos links */
+  color: #ffffff; /* Cor do texto dos links */
 }
 
 /* Estiliza os links quando são passados o mouse sobre */
 .item-resultado a:hover {
-  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+ 
+  
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(3, 234, 255, 0.3); /* Adiciona sublinhado ao passar o mouse */
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-  color: #45474b; /* Cor do texto */
+  color: #ffffff; /* Cor do texto */
   margin: 0.5rem 0; /* Margem acima e abaixo */
 }
 
 /* Estiliza o rodapé da página */
 footer {
-  background-color: #f5f7f8; /* Cor de fundo do rodapé */
-  color: #45474b; /* Cor do texto */
+  background-color: transparent; /* Cor de fundo do rodapé */
+  color: #fff; /* Cor do texto */
   text-align: center; /* Alinha o texto ao centro */
   padding: 0; /* Espaçamento interno */
   width: 100%; /* Largura total da página */
-  position: absolute; /* Posiciona o rodapé */
+  position: fixed; /* Posiciona o rodapé */
   bottom: 0; /* Alinha ao fundo da página */
   font-size: 1rem; /* Tamanho da fonte */
 }
@@ -132,7 +158,10 @@ footer {
     width: 40rem; /* Largura da caixa de resultados em telas menores */
     height: 40vh; /* Altura da caixa de resultados em telas menores */
   }
-
+  button:hover {
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(3, 234, 255, 0.3);}
+    
   .item-resultado h2 {
     font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
   }

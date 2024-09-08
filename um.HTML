@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprenda HTML do Zero</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/dark.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <a href="index.html" class="home-button">Home</a>
+    </nav>
+    <div class="notification" id="notification"></div>
+    <div class="container">
+      <header>
+        <h1>HTML</h1>
+      </header>
+
+      <main>
+        <section id="introducao">
+          <h2>O que é HTML?</h2>
+          <p>
+            Estrutura Básica do HTML: Um Guia Simples O que é HTML? HTML
+            (HyperText Markup Language) é a linguagem padrão para criar páginas
+            da web. Imagine-a como um conjunto de "blocos de construção" que
+            você usa para organizar e dar formato ao conteúdo de um site. Cada
+            bloco é representado por uma tag HTML. Estrutura Simples de uma
+            Página HTML:
+          </p>
+          <div class="code-block">
+            <button class="copy-button" onclick="copyCode()">Copiar</button>
+            <pre class="code-container"><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+   &lt;head&gt;
+    &lt;title&gt;Meu Primeiro Site&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Bem-vindo ao meu site!&lt;/h1&gt;
+    &lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+          </div>
+        </section>
+
+        <section id="estrutura">
+          <h2>Explicação do código</h2>
+          <!-- <h2>Estrutura Básica de uma Página HTML</h2> -->
+        </section>
+
+        <section id="projeto">
+          <nav>
+            <ul>
+              <li>
+                &lt;!DOCTYPE html&gt;: Informa ao navegador que o documento é um
+                HTML5.
+              </li>
+              <li>&lt;html&gt;: Marca o início e o fim do documento HTML.</li>
+              <li>
+                &lt;head&gt;: Contém informações sobre a página, como o título.
+              </li>
+              <li>
+                &lt;title&gt;: Define o título da página que aparece na aba do
+                navegador.
+              </li>
+              <li>&lt;body&gt;: Contém o conteúdo visível da página.</li>
+              <li>&lt;h1&gt;: Representa o título principal da página.</li>
+              <li>&lt;p&gt;: Representa um parágrafo de texto.</li>
+              <li>&lt;a&gt;: Cria um link que leva a outra página ou site.</li>
+            </ul>
+          </nav>
+        </section>
+
+        <section>
+          <h2>Para que é usado o HTML?</h2>
+          <nav>
+            <ul>
+              <li>
+                Criação de Sites: HTML é usado para construir a estrutura de
+                sites e páginas web.
+              </li>
+              <li>
+                Estruturação de Conteúdo: Ajuda a organizar e exibir texto,
+                imagens, e outros elementos de forma estruturada.
+              </li>
+              <li>
+                Integração com CSS e JavaScript: HTML trabalha em conjunto com
+                CSS (para estilos) e JavaScript (para funcionalidades
+                interativas).
+              </li>
+            </ul>
+          </nav>
+        </section>
+
+        <section>
+          <h2>Exemplos de Tags HTML Comuns</h2>
+          <nav>
+            <ul>
+              <li>
+                &lt;h1&gt; a &lt;h6&gt;: Títulos, de &lt;h1&gt; (o mais
+                importante) a &lt;h6&gt; (o menos importante).
+              </li>
+              <li>&lt;p&gt;: Parágrafo de texto.</li>
+              <li>&lt;a&gt;: Link para outra página ou site.</li>
+              <li>&lt;img&gt;: Imagem.</li>
+              <li>
+                &lt;ul&gt; e &lt;ol&gt;: Listas não ordenadas e ordenadas.
+              </li>
+              <li>&lt;table&gt;: Tabelas.</li>
+            </ul>
+          </nav>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <p>2024 - Curioso. Todos os direitos reservados.</p>
+      <p>Entre em contato pelo email: curioso@pesquisa.com.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+
+      function copyCode() {
+        const code = document.querySelector(".code-container code").innerText;
+        const tempInput = document.createElement("textarea");
+        tempInput.value = code;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+        alert("Código copiado para a área de transferência!");
+      }
+    </script>
+    <script src="resultados.js"></script>
+  </body>
+</html>

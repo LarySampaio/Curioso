@@ -1,0 +1,215 @@
+/* Estilos gerais */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Estiliza o corpo da página */
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+  animation: fadeIn 1s ease-in-out;
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  background: linear-gradient(
+    to bottom right,
+    #000,
+    rgb(27, 27, 67),
+    rgb(26, 26, 120),
+    #00e6ee
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #fff; /* Adicione cor ao texto para contrastar com o fundo */
+}
+
+/* Estilos do header */
+header {
+  /* Cor de fundo com opacidade para melhor contraste */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* Garante que o header ocupe toda a largura */
+}
+
+/* Estilos do botão e campo de pesquisa */
+section {
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza o conteúdo do section */
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(3, 234, 255, 0.3);
+}
+footer {
+  background-color: transparent; /* Cor de fundo do rodapé */
+  color: #fff; /* Cor do texto */
+  text-align: center; /* Alinha o texto ao centro */
+  padding: 0; /* Espaçamento interno */
+  width: 100%; /* Largura total da página */
+  position: fixed; /* Posiciona o rodapé */
+  bottom: 0; /* Alinha ao fundo da página */
+  font-size: 1rem; /* Tamanho da fonte */
+  flex-shrink: 0;
+}
+
+/* Estilos do wrapper do código */
+.code-wrapper {
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #1e1e1e;
+}
+
+/* Estilos do container do código */
+.code-container {
+  background-color: transparent;
+  color: #d34b4b;
+  /* border: 0px 0px 0px 0px solid transparent;
+  border-radius: 5px; */
+  font-family: monospace;
+  overflow-x: auto;
+  position: center;
+  /* padding: 15px; */
+  box-sizing: border-box;
+  text-align-last: left;
+}
+
+/* Estilos do cabeçalho do código */
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #f8c555;
+}
+
+.language-name {
+  font-weight: bold;
+}
+
+.copy-button {
+  background-color: #39a1cf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.copy-button:hover {
+  background-color: transparent;
+}
+
+.code-block {
+  padding: 0px;
+  border-radius: 0px;
+  border: 0px;
+
+  background-color: #303030;
+
+  width: 400px;
+  height: 200px;
+
+  margin: 0 auto;
+  position: relative;
+}
+
+.copy-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+.container {
+  width: 60rem;
+  height: 60rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  position: relative;
+  margin: 6rem auto;
+  box-shadow: 0 4px 8px rgba(3, 234, 255, 0.3);
+}
+#projeto {
+  text-align: left;
+}
+
+footer {
+  font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+}
+
+#notification {
+  /* Estilos da notificação */
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#notification.show {
+  opacity: 1;
+}
+.sidebar {
+  position: fixed;
+  top: 5px;
+  left: 5px; /* Remova o zero à frente, deve ser '5px' */
+  background-color: transparent;
+  padding: 5px;
+}
+
+.home-button {
+  display: block;
+  margin-bottom: 5px;
+  padding: 15px; /* Aumente o padding para aumentar o tamanho do botão */
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent; /* Adicione uma cor de fundo se quiser que o botão tenha uma cor sólida */
+  border: 3px solid transparent; /* Aumente a largura da borda se necessário */
+  border-radius: 10px; /* Aumente o border-radius para bordas mais arredondadas */
+  font-size: 1.5rem; /* Aumente o tamanho da fonte */
+}
+.home-button:hover {
+  box-shadow: 0 4px 8px rgba(3, 234, 255, 0.3);
+}
