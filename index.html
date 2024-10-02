@@ -4,21 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-ChzDzmAAgebV6UeqvsgUqNP/R/gI0aYGBn7/56tVL+tWqkHnQD7/e9L1a0xyexAu6Q6RaLKj42a1WZ"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    </head>
+
     <title>Curioso</title>
   </head>
   <body>
-    <header>
-      <h1>Curioso</h1>
-    </header>
+    <header></header>
     <main>
-      <section>
-        <input
-          type="text"
-          placeholder="Vamos curiar juntos?"
-          id="campo-pesquisa" />
-        <button onclick="pesquisar()">Pesquisar</button>
-      </section>
-      <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+      <article>
+        <h1>Curioso</h1>
+        <section>
+          <div class="campopesquisa">
+            <span class="lupa"></span>
+            <input
+              type="text"
+              placeholder="Vamos curiar juntos?"
+              id="campo-pesquisa" />
+          </div>
+
+          <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+      </article>
     </main>
     <footer>
       <p>2024 - Curioso. Todos os direitos reservados.</p>
